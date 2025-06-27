@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasha Hatoum - Problem Solving Task #6</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="hero-title">Rasha Hatoum 🧡</h1>
+      <p class="hero-subtitle">JavaScript Problem Solving</p>
+      <div class="hero-badge">Task #6 - 20 Programming Challenges</div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">20</span>
+        <span class="stat-label">Problems Solved</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Lines of Code</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Success Rate</span>
+      </div>
+      <div class="stat-card">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Built-in Methods</span>
+        </div>
+    </div>
+
+    <div class="problems-section">
+      <h2 class="section-title">Programming Challenges</h2>
+
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="problem-number">01</div>
+          <div class="problem-title">Reverse a String</div>
+          <div class="problem-description">
+            Reverse any string character by character using loops
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :javascript
+Output :tpircsavaj
+
+Example 2:
+Input :rashahat
+Output :tahahsar
+
+Example 3:
+Input :
+Output :Invalid input, please provide a non-empty string.
+
+Example 4:
+Input :12345
+Output :Invalid input, please provide string input.
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">02</div>
+          <div class="problem-title">Palindrome Check</div>
+          <div class="problem-description">
+            Check if a string reads the same forwards and backwards
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :Madam
+Output :true
+
+Example 2:
+Input :hello
+Output :false
+
+Example 3:
+Input :
+Output :Invalid input, please provide a non-empty string.
+
+Example 4:
+Input :12321
+Output :Invalid input, please provide string input.
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">03</div>
+          <div class="problem-title">Find Maximum Number</div>
+          <div class="problem-description">
+            Find the largest number in an array using iteration
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :1,5,3,9,2
+Output :9
+
+Example 2:
+Input :100,52,32,99,21
+Output :100
+        </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">04</div>
+          <div class="problem-title">Factorial Calculation</div>
+          <div class="problem-description">
+            Calculate factorial of a number using loops
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :5
+Output :120
+
+Example 2:
+Input :6
+Output :720
+</pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">05</div>
+          <div class="problem-title">Prime Number Check</div>
+          <div class="problem-description">
+            Determine if a number is prime with optimized algorithm
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :7
+Output :true
+
+Example 2:
+Input :10
+Output :false
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">06</div>
+          <div class="problem-title">Remove Duplicates</div>
+          <div class="problem-description">
+            Create a unique array by removing duplicate elements
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :1,2,2,3,4,4,5
+Output :1,2,3,4,5
+
+Example 2:
+Input :30,100,50,60,60,50,100,99
+,70,60,25,30
+Output :30,100,50,60,99,70,25
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">07</div>
+          <div class="problem-title">Find Missing Number</div>
+          <div class="problem-description">
+            Find the missing number in a sequence from 1 to 100
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : 
+start = 1 | end = 100
+Sequence array : [1,2,.....,100]
+Output :55
+
+Example 2:
+Input :
+start = 50 | end = 100
+Sequence array : [51,52,.....,100]
+Output :50
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">08</div>
+          <div class="problem-title">Capitalize First Letters</div>
+          <div class="problem-description">
+            Capitalize the first letter of each word in a sentence
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :hello world from javascript
+Output :Hello World From Javascript
+
+Example 2:
+Input :rasha hatoum is a Software engineer
+Output :Rasha Hatoum Is A Software Engineer
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">09</div>
+          <div class="problem-title">Anagram Check</div>
+          <div class="problem-description">
+            Check if two strings are anagrams of each other
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :Listen,silent
+Output :true
+
+Example 2:
+Input :hello,world
+Output :false
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">10</div>
+          <div class="problem-title">Chunk an Array</div>
+          <div class="problem-description">
+            Split an array into subarrays of specified size
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : 
+[1, 2, 3, 4, 5, 6, 7] | Size: 3
+Output : [[1,2,3],[4,5,6],[7]]
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">11</div>
+          <div class="problem-title">Find Sum Pair</div>
+          <div class="problem-description">
+            Find two numbers in array that sum to target value
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : 
+[10,5,2,7,8,3] | Target: 10
+Output : [2,8]
+
+Example 2:
+Input : 
+[10,25,40,25,8,3] | Target: 50
+Output : [10,40]
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">12</div>
+          <div class="problem-title">Rotate Array Left</div>
+          <div class="problem-description">
+            Rotate array elements to the left by n positions
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : [1,2,3,4,5] | N: 2
+Output : [3,4,5,1,2]
+
+Example 2:
+Input : [1,2,3,4,5,6,7] | N: 4
+Output : [5,6,7,1,2,3,4]
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">13</div>
+          <div class="problem-title">Array Intersection</div>
+          <div class="problem-description">
+            Find common elements between two arrays
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : [1,2,3,4,3] | [3,4,5,6,3]
+Output : [3,4]
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">14</div>
+          <div class="problem-title">Character Frequency</div>
+          <div class="problem-description">
+            Count frequency of each character in a string
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : hello
+Output : 
+{h: 1, e: 1, l: 2, o: 1}
+
+Example 2:
+Input : RAsha
+Output : 
+{r: 1, a: 2, s: 1, h: 1}
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">15</div>
+          <div class="problem-title">Flatten Nested Array</div>
+          <div class="problem-description">
+            Flatten multi-dimensional arrays into single array
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :[1, [2, 3], [4, [5, 6]]]
+Output :[1, 2, 3, 4, 5, 6]
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">16</div>
+          <div class="problem-title">Longest Word</div>
+          <div class="problem-description">
+            Find the longest word in a sentence
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :The quick brown fox jumped over the lazy dog
+Output :jumped
+
+Example 2:
+Input :Find the Longest Word in a Sentence
+Output :Sentence
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">17</div>
+          <div class="problem-title">Most Frequent Element</div>
+          <div class="problem-description">
+            Find the most frequently occurring element in array
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : [1, 2, 3, 2, 2, 4, 5, 2]
+Output : 2
+
+Example 2:
+Input : ["a","b","c","a","b","a"]
+Output : a
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">18</div>
+          <div class="problem-title">Sort by Property</div>
+          <div class="problem-description">
+            Sort array of objects by age using bubble sort
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : 
+[{"name":"Alice","age":30},{"name":"Bob","age":25},{"name":"Charlie","age":35}]
+
+Output : 
+[{"name":"Bob","age":25},{"name":"Alice","age":30},{"name":"Charlie","age":35}]
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">19</div>
+          <div class="problem-title">Non-Repeating Character</div>
+          <div class="problem-description">
+            Find first character that doesn't repeat in string
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input :Swiss
+Output :w
+
+Example 2:
+Input :aabbcc
+Output :No non-repeating character found.
+            </pre>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-number">20</div>
+          <div class="problem-title">Symmetric Difference</div>
+          <div class="problem-description">
+            Find elements present in one array but not both
+          </div>
+          <button onclick="toggleOutput(this)">Show Output</button>
+          <pre class="card-output">
+Example 1:
+Input : [1,2,3] | [3,4,5]
+Output : [1,2,4,5]
+
+Example 2 (with duplicates in input):
+Input : [1,2,2,3] | [2,3,3,4]
+Output : [1,4]
+
+Example 3 (empty arrays):
+Input : [] | [1,2,3]
+Output : [1,2,3]
+
+Example 4 (no common elements):
+Input : [1,2] | [3,4]
+Output : [1,2,3,4]
+
+Example 5 (all common elements):
+Input : [1,2,3] | [1,2,3]
+Output : []
+            </pre>
+        </div>
+      </div>
+      <button class="run-button">
+        🎮 You can also see the solutions if you open the console! 🎮
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        🔥 Crafted with passion by Rasha Hatoum - Software Engineer - Student in focal X Academy 🔥
+      </p>
+    </div>
+  </footer>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    function toggleOutput(button) {
+      const outputBox = button.nextElementSibling;
+
+      if (outputBox.style.display === "block") {
+        outputBox.style.display = "none";
+        button.textContent = "Show Output";
+      } else {
+        outputBox.style.display = "block";
+        button.textContent = "Hide Output";
+      }
+    }
+  </script>
+</body>
+
+</html>

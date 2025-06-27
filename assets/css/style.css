@@ -1,0 +1,315 @@
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #fdfdfd;
+        min-height: 100vh;
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        padding: 2rem 0;
+        text-align: center;
+        margin-bottom: 3rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+      }
+
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #ff7900;
+        text-shadow: none;
+        margin-bottom: 1rem;
+        animation: slideInDown 1s ease-out;
+      }
+
+      .hero-subtitle {
+        font-size: 1.5rem;
+        color: #555;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+        animation: slideInUp 1s ease-out 0.3s both;
+      }
+
+      .hero-badge {
+        display: inline-block;
+        background: #ff7900;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        animation: pulse 2s infinite;
+        margin-top: 1rem;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+
+      .stat-card {
+        background: #fff8f0;
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid #ffd1a6;
+        transition: all 0.3s ease;
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .stat-number {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ff7900;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-label {
+        color: #444;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .problems-section {
+        background: #ffffff;
+        border-radius: 30px;
+        padding: 3rem;
+        margin: 3rem 0;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #ff7900;
+      }
+
+      .problems-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .problem-card {
+        background: linear-gradient(135deg, #ffe0c2, #ffb066);
+        border-radius: 15px;
+        padding: 1.5rem;
+        color: #333;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .problem-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .problem-card:hover::before {
+        left: 100%;
+      }
+
+      .problem-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .problem-number {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .problem-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .problem-description {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        line-height: 1.4;
+      }
+
+      .run-button {
+        background: #ff7900;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 2rem auto;
+        display: block;
+        box-shadow: 0 4px 15px rgba(255, 121, 0, 0.3);
+      }
+
+      .run-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 121, 0, 0.4);
+      }
+
+      .console-output {
+        background: #1e1e1e;
+        color: #00ff00;
+        padding: 2rem;
+        border-radius: 15px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        max-height: 400px;
+        overflow-y: auto;
+        margin-top: 2rem;
+        white-space: pre-wrap;
+        border: 2px solid #333;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 3rem 0;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .footer-text {
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      .problem-card button {
+        margin-top: 1rem;
+        padding: 0.5rem 1.5rem;
+        background-color: #ff7900;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(255, 121, 0, 0.2);
+      }
+
+      .problem-card button:hover {
+        background-color: #e56e00;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 121, 0, 0.3);
+      }
+
+      .problem-card button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(255, 121, 0, 0.2);
+      }
+
+      .card-output {
+        display: none;
+        background-color: #fff;
+        color: #333;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px dashed #ccc;
+        white-space: pre-wrap;
+        font-family: monospace;
+      }
+
+      @keyframes slideInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2.5rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.2rem;
+        }
+
+        .problems-section {
+          padding: 1.5rem;
+        }
+
+        .problems-grid {
+          grid-template-columns: 1fr;
+        }
+      }
